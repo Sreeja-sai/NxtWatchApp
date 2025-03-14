@@ -4,19 +4,19 @@ import Header from '../Header'
 
 import SideNavBar from '../SideNavBar'
 
-import PremiumSection from '../PremiumSection'
+import AllSavedVideos from '../AllSavedVideos'
 
-import AllVideosSection from '../AllVideosSection'
+// import PremiumSection from '../PremiumSection'
+
+// import AllGamingVideoSection from '../AllGamingVideosSection'
 
 import {
   HomeContainer,
   MainSectionContainer,
   AppMainContainer,
-} from './StyledComponent'
+} from '../Home/StyledComponent'
 
-// import HomeSection from '../HomeSection'
-
-class Home extends Component {
+class Saved extends Component {
   render() {
     return (
       <HomeContainer>
@@ -24,8 +24,7 @@ class Home extends Component {
         <MainSectionContainer>
           <SideNavBar />
           <AppMainContainer>
-            <PremiumSection />
-            <AllVideosSection />
+            <AllSavedVideos />
           </AppMainContainer>
         </MainSectionContainer>
       </HomeContainer>
@@ -33,4 +32,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Saved

@@ -4,19 +4,17 @@ import Header from '../Header'
 
 import SideNavBar from '../SideNavBar'
 
-import PremiumSection from '../PremiumSection'
+// import PremiumSection from '../PremiumSection'
 
-import AllVideosSection from '../AllVideosSection'
+import AllTrendingVideosSection from '../AllTrendingVideosSection'
 
 import {
   HomeContainer,
   MainSectionContainer,
   AppMainContainer,
-} from './StyledComponent'
+} from '../Home/StyledComponent'
 
-// import HomeSection from '../HomeSection'
-
-class Home extends Component {
+class Trending extends Component {
   render() {
     return (
       <HomeContainer>
@@ -24,8 +22,7 @@ class Home extends Component {
         <MainSectionContainer>
           <SideNavBar />
           <AppMainContainer>
-            <PremiumSection />
-            <AllVideosSection />
+            <AllTrendingVideosSection />
           </AppMainContainer>
         </MainSectionContainer>
       </HomeContainer>
@@ -33,4 +30,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default Trending

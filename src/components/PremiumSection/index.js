@@ -11,9 +11,9 @@ const PremiumSection = () => (
   <PremiumSectionContainer id="premium">
     <CloseContainer>
       <IoIosClose
-        onClick={() =>
-          (document.getElementById('premium').style.display = 'none')
-        }
+        onClick={() => {
+          document.getElementById('premium').style.display = 'none'
+        }}
         fontSize="30px"
       />
     </CloseContainer>

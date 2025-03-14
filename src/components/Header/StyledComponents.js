@@ -2,13 +2,16 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
   width: 100vw;
-  height: 10vh;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-
 `
 export const HeaderLogo = styled.img`
   height: 35px;
@@ -17,7 +20,6 @@ export const HeaderLogo = styled.img`
 export const HeaderRightSection = styled.div`
   display: flex;
   align-items: center;
-
 `
 export const UserLogo = styled.img`
   height: 30px;

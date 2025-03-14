@@ -26,6 +26,14 @@ class LoginRoute extends Component {
     loginResultText: '',
   }
 
+  componentDidMount() {
+    const {history} = this.props
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      history.replace('/')
+    }
+  }
+
   changeUsername = event => {
     this.setState({username: event.target.value})
   }
@@ -67,7 +75,6 @@ class LoginRoute extends Component {
 
   render() {
     const {showPasswordCheck, loginResultText} = this.state
-    const {history} = this.props
 
     return (
       <LoginContainer>
