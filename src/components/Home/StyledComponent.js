@@ -1,0 +1,29 @@
+import styled from 'styled-components'
+
+export const HomeContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+`
+// export const HeaderContainer = styled.div`
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   position: sticky;
+//   z-index: 1000;
+// `
+
+export const MainSectionContainer = styled.div`
+  display: flex;
+  margin-top: 60px;
+`
+export const AppMainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 83vw;
+  margin-left: 17vw;
+  background-color: ${props =>
+    props.lightMode === true ? '#ffffff' : '#000000'};
+  color: ${props => (props.lightMode === true ? '#000000' : '#ffffff')};
+`
